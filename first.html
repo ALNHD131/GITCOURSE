@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
 </head>
 <body>
     <script>
-    let a = false;
-let b = 6;
-a &&= b;
-alert('fdfdf')
-console.log(a);
+    function print(x, y){
+        return x + y;
+    }
+
+    function subtract(x, y) {
+        return x - y;
+    }
+
+    function operation (x, y, func) {
+        const result = func(x, y);
+        console.log(result);
+    }
+
+    console.log('sum');
+    operation(10, 6, print)
     </script>
 </body>
 </html>
