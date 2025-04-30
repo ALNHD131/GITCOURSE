@@ -6,9 +6,50 @@
 </head>
 <body>
     <script>
-    const user = (userName, userAge) => ({name: userName, age: userAge});
-    let index = user('Tom', 25);
-    console.log(index.name)
+    const message = (x, y) => x*y;
+    console.log(message(5, 5))
     </script>
+    <script>
+        const str = len => {
+            return len.length
+        }
+        console.log(str('deswwd'))
+    </script>
+    <script>
+        const chetnoe = (chislo)=> {
+            if( chislo % 2 == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+        console.log(chetnoe(4))
+    </script>
+    <script>
+        const zadanie = (userName, userAge) => `Имя: ${userName}, Возраст: ${userAge}`;
+        console.log(zadanie('Игорь', 32))
+    </script>
+    <script>
+        const massive = (x) => {
+            let result = 0;
+            for(let y = 0; y < x.length; y++) {
+                result += x[y]
+            }
+            return result;
+        }
+        console.log(massive([1, 1, 1, 1]))
+    </script>
+    <script>
+        const quadro = (quad) => quad ** 2;
+        console.log(quadro(5))
+    </script>
+    <script>
+        const upp = (s) => {
+        let change = s.toUpperCase();
+        return change    
+        }
+        console.log(upp('держись'))
+    </script>
+
 </body>
 </html>
