@@ -6,21 +6,9 @@
 </head>
 <body>
     <script>
-    function print(x, y){
-        return x + y;
-    }
-
-    function subtract(x, y) {
-        return x - y;
-    }
-
-    function operation (x, y, func) {
-        const result = func(x, y);
-        console.log(result);
-    }
-
-    console.log('sum');
-    operation(10, 6, print)
+    const user = (userName, userAge) => ({name: userName, age: userAge});
+    let index = user('Tom', 25);
+    console.log(index.name)
     </script>
 </body>
 </html>
